@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+    <script src="./JS/comic.js"></script>
+    <script src="./JS/events.js"></script>
+
+    <title>Project 157</title>
+</head>
+
+<body>
+    <a-scene id="scene" background="color: black">
+        <a-entity id="comic-container" comics cursor-event info_bar></a-entity>
+
+        <a-camera id="main_cam">
+            <a-entity position="5.55055 6.0224 -8.40059"
+                text="font: monoid; color: #fff; value: Virtual Comic Store; height: 1.77; width: 20" id="heading">
+            </a-entity>
+
+            <a-entity position="2.76528 4.76273 -8.40059"
+                text="font: sourcecodepro; color: #fff; value: Get Your Favourite Comic; height: 1.77; width: 12.5"
+                id="sub-heading">
+            </a-entity>
+
+            <a-entity id="camera-cursor" cursor position="0 0 -1"
+                geometry="primitive: ring; radiusInner:0.02; radiusOuter: 0.03" material="color: green; shader: flat">
+            </a-entity>
+
+        </a-camera>
+
+        <!-- comic info -->
+        <a-entity id="comic-info" visible="false">
+            <a-plane id="comic-text-plane" position="1 -16.14177 -11.2474" scale="30.08729 8.51646 1">
+            </a-plane>
+            <a-text id="textContainer-title" position="-5.104 2.189 -9.551"></a-text>
+            <a-text id="textContainer-info" position="-5.01334 1.05402 -9.551"></a-text>
+        </a-entity>
+
+
+    </a-scene>
+
+</body>
+
+</html
